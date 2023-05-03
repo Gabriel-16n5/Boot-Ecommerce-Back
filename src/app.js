@@ -3,8 +3,8 @@ import cors from "cors";
 import router from "./routes/index.Router.js";
 
 const app = express();
-app.use(cors());
 app.use(express.json());
+app.use(cors());
 app.use(router);
 
 // mongod --dbpath ~/.mongo
