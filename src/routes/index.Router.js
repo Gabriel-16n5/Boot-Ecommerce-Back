@@ -8,7 +8,7 @@ import { productsValidation } from "../middlewares/productsValidation.js";
 
 const router=Router();
 router.post('/signin', signInValidation,signIn);
-router.post('/signip', signUpValidation,signUp);
+router.post('/signup', signUpValidation,signUp);
 router.get('/products', getProducts);
 router.post('/products',productsValidation,postProducts );
 
